@@ -1,8 +1,5 @@
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
-
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+# OrangeFox / TWRP product config for star2lte
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Device identifier
 PRODUCT_DEVICE := star2lte
